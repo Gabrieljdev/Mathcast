@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathCast</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+    <aside>
+        <p>MathCast</p>
+        <nav>
+            <ul class="lista-links">
+                <li>
+                    <a href="#" class="link-destaque">Publicar</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/img/feed.svg">
+                        Feed
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/img/account_circle.svg">
+                        Perfil
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/img/info.svg">
+                        Sobre nós
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/img/logout.svg">
+                        Sair
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <div class="container-upload-imagem">
+            <div class="container-imagem">
+                <img src="./assets/img/semperfil.jpg" alt="" class="main-imagem">
+            </div>
+            <button id="upload-btn">Carregar imagem</button>
+            <input type="file" id="image-upload" accept="image/" style="display: none" />
+            <div class="container-imagem-nome">
+                <p>image_projeto.png</p>
+                <img src="./assets/img/upload.svg">
+            </div>
+        </div>
+        <div class="container-descricao">
+            <h2>Cadastro</h2>
+            <form>
+                <div>
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" />
+                </div>
+                <div>
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" name="descricao"></textarea>
+                </div>
+                <div>
+                    <label for="categoria">hobby</label>
+                    <input type="text" name="categoria" id="input-tags"/>
+                </div>
+                <ul class="lista-tags" id="lista-tags">
+                    <li>
+                        <p>ocupação</p>
+                        <img src="./assets/img/close-black.svg" alt="Remover tag">
+                    </li>
+                </ul>
+                <div class="container-botoes">
+                    <button type="button" class="botao-descartar">Descartar</button>
+                    <button type="submit" class="botao-publicar" id="botao-publicar">Publicar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
